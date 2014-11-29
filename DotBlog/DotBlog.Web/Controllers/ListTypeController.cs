@@ -88,20 +88,22 @@ namespace DotBlog.Web.Controllers
         //
         // GET: /ListType/Delete/5
 
-        public ActionResult Delete(int id)
+        public ActionResult Delete(Guid id)
         {
-            return View();
+            return View(_repository.Get(id));
         }
 
         //
         // POST: /ListType/Delete/5
 
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        public ActionResult Delete(ListType model)
         {
             try
             {
                 // TODO: Add delete logic here
+
+                _repository.Delete(model);
 
                 return RedirectToAction("Index");
             }

@@ -59,7 +59,13 @@ namespace DotBlog.Core.Repository
 
         public void Delete(T item)
         {
-            _context.Set<T>().Remove(item);
+            _context.Set<T>().Remove(Get(item.Id));
+            _context.SaveChanges();
+        }
+
+        public void Delete(TKey key)
+        {
+            _context.Set<T>().Remove(Get(key));
             _context.SaveChanges();
         }
 

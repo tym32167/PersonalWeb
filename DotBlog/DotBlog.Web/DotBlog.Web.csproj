@@ -156,6 +156,7 @@
     <Content Include="Views\ListType\Details.cshtml" />
     <Content Include="Views\ListType\Create.cshtml" />
     <Content Include="Views\ListType\Edit.cshtml" />
+    <Content Include="Views\ListType\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DotBlog.Core\DotBlog.Core.csproj">

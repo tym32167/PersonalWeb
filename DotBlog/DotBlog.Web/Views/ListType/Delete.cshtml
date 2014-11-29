@@ -2,16 +2,17 @@
 
 @{
     ViewBag.Title = "title";
-    //Layout = "_Layout";
+   // Layout = "Create.cshtml`";
 }
 
 <h2>title</h2>
 
+
 @using (Html.BeginForm())
 {
-    @Html.EditorForModel()
+    @Html.DisplayForModel()
 
-    <input type="submit" value="save" />
+    <input type="submit" value="delete" />
 }
 
 @Html.ActionLink("Index", "Index")
