@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotBlog.Web", "DotBlog.Web\DotBlog.Web.csproj", "{B86220ED-3674-4D57-86F1-EF28F7E87A87}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotBlog.Core", "DotBlog.Core\DotBlog.Core.csproj", "{AFD790C5-A52C-4096-B76F-E08922CA5920}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B86220ED-3674-4D57-86F1-EF28F7E87A87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B86220ED-3674-4D57-86F1-EF28F7E87A87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B86220ED-3674-4D57-86F1-EF28F7E87A87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFD790C5-A52C-4096-B76F-E08922CA5920}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFD790C5-A52C-4096-B76F-E08922CA5920}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFD790C5-A52C-4096-B76F-E08922CA5920}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFD790C5-A52C-4096-B76F-E08922CA5920}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

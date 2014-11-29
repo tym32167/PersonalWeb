@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
+using DotBlog.Core.Objects;
+using DotBlog.Core.Repository;
 
 namespace DotBlog.Web.Controllers
 {
@@ -13,8 +12,12 @@ namespace DotBlog.Web.Controllers
 
         public string Index()
         {
-            return "Hello";
+            var repo = new Repository<ListType, Guid>(new DotBlogContext());
+
+            return "Hello " + repo.Count();
         }
+
+        
 
     }
 }

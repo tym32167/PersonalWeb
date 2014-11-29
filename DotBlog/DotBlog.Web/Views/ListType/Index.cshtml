@@ -1,0 +1,21 @@
+﻿@model System.Collections.Generic.IEnumerable<DotBlog.Core.Objects.ListType>
+
+@{
+    ViewBag.Title = "title";
+   // Layout = "_Layout";
+}
+
+<h2>title</h2>
+
+
+<table>
+    
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+        </tr>
+    }
+</table>
+
